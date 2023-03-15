@@ -1,0 +1,42 @@
+@use './modules/project-card-image.scss';
+@use './modules/project-card-description.scss';
+@use './modules/project-card-link.scss';
+@use './modules/project-card-skill.scss';
+@use './modules/project-card-feature.scss';
+@use './modules/project-card-prerequisite.scss';
+
+:root {
+	--card-bg-color: linear-gradient(60deg, rgba(0, 0, 0, 0.85), grey 150%);
+	--card-fg-color: white;
+}
+
+.project {
+	color: var(--card-fg-color);
+	width: 100%;
+	padding: 5px;
+	box-shadow: 0 0 5px whitesmoke;
+	border-radius: 15px;
+	background: var(--card-bg-color);
+	font-family: "Open Sans";
+	transform: scale(1);
+	transition: all 200ms ease-in-out;
+	&:hover {
+		transform: scale(1.01);
+		transition: all 200ms ease-in-out;
+		box-shadow: 0 0 5px silver;
+		z-index: 1;
+	}
+}
+ul {
+	list-style-type: none;
+}
+.project-features, .project-prerequisites {
+	padding: 0 5px;
+	header {
+		font-weight: 600;
+		margin: 2.5px 0;
+	}
+	li {
+		font-weight: lighter;
+	}
+}

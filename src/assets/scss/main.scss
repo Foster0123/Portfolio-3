@@ -1,0 +1,28 @@
+@use './shared/footer/footer';
+@use './shared/navbar/navbar';
+
+@use './components/project/project';
+@use './components/projects/projects';
+@use './components/intro/intro';
+@use './components/works/works';
+
+:root {
+	--default-bg-color:rgba(0,0,0,0.95);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgba(0,0,0,0.9);
+}
+html {
+	scroll-behavior: smooth;
+	color: white;
+	scrollbar-width: thin;
+	&::-webkit-scrollbar {
+		width: 5px;
+		display: none;
+	}
+}
