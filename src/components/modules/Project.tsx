@@ -58,8 +58,8 @@ const Project = (props: any) => {
                 </div>
                 <div className="project-skills">
                 {
-                    props.techs.map((tech: any) => {
-                        <img className="project-tools" src={tech} alt="Skill Logo" loading="lazy" />
+                    props.techs.map((tech: any, index: any) => {
+                        <img className="project-tools" src={tech} key={index} alt="Skill Logo" loading="lazy" />
                     })
                 }
                 </div>

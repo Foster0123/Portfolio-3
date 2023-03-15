@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "dev": "gatsby develop",
+    "watch": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

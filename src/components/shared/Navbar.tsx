@@ -1,6 +1,6 @@
 import React from "react";
 
-import NavBarLogo from './../../assets/images/fz-logo.png';
+import NavBarLogo from './../../assets/images/icon.png';
 import NavBarMenu from './../../assets/images/menu.svg';
 const Navbar = () => {
     function toggleNavbar() {
