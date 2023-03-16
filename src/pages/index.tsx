@@ -1,5 +1,5 @@
 import * as React from "react"
-import type { HeadProps, PageProps } from "gatsby"
+import type {  } from "gatsby"
 
 import App from "../components/App";
 import './../assets/scss/main.scss';
@@ -7,7 +7,8 @@ import './../assets/scss/main.scss';
 const Page = () => <App />
 export default Page
 
-export function Head(props: HeadProps) {
+export function Head() {
+  const siteTitle = "Foster Z"
   return (
     <>
       <meta charSet="UTF-8" />
@@ -21,24 +22,24 @@ export function Head(props: HeadProps) {
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-       />
+      />
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
-       />
+      />
       <link
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap"
         rel="stylesheet"
-       />
+      />
       <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:400"
         media="all"
         rel="stylesheet"
-       />
-      <title>Foster Z</title>
+      />
+      <title>{siteTitle}</title>
     </>
   )
 }

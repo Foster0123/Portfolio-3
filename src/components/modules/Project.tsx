@@ -6,7 +6,7 @@ const Project = (props: any) => {
     })
     return (
         <div className="project-container" id="projects">
-            <article className="project">
+            <article className="project" style={{ background: `linear-gradient(60deg, rgba(0, 0, 0, 0.1) 5%, ${props.accent} 150%)` }}>
                 <div className="project-canvas" style={{ backgroundImage: `url(${props.bgImage})` }}>
                     <a className="new-image-window" href={props.bgImage} target="_blank">
                         <i className="bi bi-box-arrow-up-right"></i>
@@ -53,13 +53,21 @@ const Project = (props: any) => {
                 <div className="project-features">
                     <header>Core Features</header>
                     <ul className="features-list">
-                        <li>{1}</li>
+                        {
+                            props.features.map((feature: String, index: number) => {
+                                return(
+                                    <li key={index}>{index + 1} | {feature}</li>
+                                )
+                            })
+                        }
                     </ul>
                 </div>
                 <div className="project-skills">
                 {
-                    props.techs.map((tech: any, index: any) => {
-                        <img className="project-tools" src={tech} key={index} alt="Skill Logo" loading="lazy" />
+                    props.techs.map((tech: string, key: number) => {
+                        return(
+                            <img className="project-tools" src={tech} key={key} alt="Skill Logo" title={props.skills[key]} loading="lazy" />
+                        )
                     })
                 }
                 </div>

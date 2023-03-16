@@ -22,6 +22,7 @@ const Projects = () => {
                                 logoImage={item.logoImage}
                                 skills={item.skills}
                                 features={item.features}
+                                accent={item.accent}
                                 githubLink={item.github}
                                 liveLink={item.live}
                                 status={item.status}

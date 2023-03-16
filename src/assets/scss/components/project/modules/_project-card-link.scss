@@ -1,8 +1,7 @@
 .project-links {
 	width: 120px;
 	display: grid;
-	grid-gap: 2.5px;
-	grid-template-columns: 60px 85px;
+	grid-template-columns: 35px 85px;
 	font-size: 16px;
 	.project-src,
 	.project-demo {
@@ -24,7 +23,7 @@
 		}
 	}
 	.project-src {
-		color: rebeccapurple;
+		color: mediumpurple;
 	}
 	.project-demo {
 		color: yellowgreen;
@@ -32,6 +31,7 @@
 }
 .project-status {
 	display: grid;
+	margin-left: 5px;
 	align-items: center;
 	grid-template-columns: 25px 1fr;
 	width: 210px;

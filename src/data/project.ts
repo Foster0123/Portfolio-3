@@ -9,7 +9,7 @@ import ReactLogo from './../assets/images/skills/react.png';
 import TSLogo from './../assets/images/skills/typescript.png';
 import RedisLogo from './../assets/images/skills/redis.png';
 import NgLogo from './../assets/images/skills/angular.png';
-import ActixLogo from './../assets/images/skills/redis.png';
+import ActixLogo from './../assets/images/skills/actix.png';
 import MyLogo from './../assets/images/skills/mysql.png';
 
 import AuthlyLogo from './../assets/images/projects/authly/authly-logo.png'
@@ -29,6 +29,7 @@ const project = [
 		logoImage: `${AuthlyLogo}`,
 		github: "https://github.com/Foster0123/Authly",
 		live: "#",
+		accent: "navy",
 		status: "Completed",
 		tech: [
 			`${PugLogo}`,
@@ -59,6 +60,7 @@ const project = [
 		logoImage: `${BlazeLogo}`,
 		github: "https://github.com/Foster0123/Blaze",
 		live: "#",
+		accent: "orangered",
 		status: "Ongoing",
 		tech: [
 			`${ReactLogo}`,
@@ -90,6 +92,7 @@ const project = [
 		logoImage: `${FluidLogo}`,
 		github: "https://github.com/Foster0123/Fluid",
 		live: "#",
+		accent: "lightblue",
 		status: "Ongoing",
 		tech: [
 			`${NgLogo}`,
