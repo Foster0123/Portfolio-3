@@ -12,15 +12,9 @@
     color: white;
     transition: transform, background-color, 100ms ease-in;
     &:hover {
-        background-color: gray;
+        background-color: rgba(128, 128, 128, 0.651);
         transform: scale(1.1);
         transition: transform, background-color, 100ms ease-in;
-    }
-    &::after {
-        content: '';
-        width: 100px;
-        height: 20px;
-        background-color: red;
     }
 }
 

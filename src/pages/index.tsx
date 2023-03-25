@@ -31,7 +31,7 @@ export function Head() {
         referrerPolicy="no-referrer"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Fira+Code&display=swap"
         rel="stylesheet"
       />
       <link

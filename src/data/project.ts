@@ -44,6 +44,9 @@ import BlazeBg from './../assets/images/projects/blaze/blaze-bg.jpeg'
 import FluidLogo from './../assets/images/projects/fluid/fluid-logo.png'
 import FluidBg from './../assets/images/projects/fluid/fluid-bg.jpeg'
 
+import OasisLogo from './../assets/images/projects/oasis/Oasis.svg'
+// import OasisBg from './../assets/images/projects/fluid/fluid-bg.jpeg';
+
 const project = [
 	{
 		name: "Authly",
@@ -83,7 +86,7 @@ const project = [
 		logoImage: `${BlazeLogo}`,
 		github: "https://github.com/Foster0123/Blaze",
 		live: "#",
-		accent: "orangered",
+		accent: "orange",
 		status: "Ongoing",
 		tech: [
 			`${ReactLogo}`,
@@ -142,7 +145,7 @@ const project = [
 		name: "Oasis",
 		details: "E Commerce Application",
 		bgImage: `${FluidBg}`,
-		logoImage: `${FluidLogo}`,
+		logoImage: `${OasisLogo}`,
 		github: "https://github.com/Foster0123/Fluid",
 		live: "#",
 		accent: "yellow",

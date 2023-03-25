@@ -1,9 +1,6 @@
 import React from 'react';
 
 const Project = (props: any) => {
-    props.techs.map((item: any) => {
-        console.log(item)
-    })
     return (
         <div className="project-container" id="projects">
             <article className="project" style={{ background: `linear-gradient(60deg, rgba(0, 0, 0, 0.1) 5%, ${props.accent} 150%)` }}>
