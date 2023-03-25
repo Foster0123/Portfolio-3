@@ -1,130 +1,71 @@
 :root {
-	--default-bg-color: rgba(0, 0, 0, 0.55);
-	--gradient-text-color: linear-gradient(45deg, orangered, goldenrod);
+    --detail-bg-color:gray;
 }
-.intro-section {
-	display: grid;
-	grid-template-columns: 500px 1fr;
-	grid-template-rows: 450px 100px;
-	justify-content: space-between;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
+.intro-container {
+ display: grid;
+ align-items: center;
+ grid-template-areas: 
+ "intro-header intro-header"
+ "intro-image intro-detail"
+ ;
+ grid-template-columns: 350px 1fr;
+}
+.intro-header-section {
+    grid-area: intro-header;
 }
 .intro-image-section {
-	img {
-		width: 350px;
-		height: 350px;
-		border-radius: 50%;
-		object-fit: contain;
-		backdrop-filter: blur(3px);
-		background-color: rgba(0, 0, 0, 0.5);
-	}
+    grid-area: intro-image;
+    display: flex;
+    padding-left: 10px;
+    img {
+        max-width: 250px;
+        max-height: 250px;
+    }
 }
-.intro-details-section {
-	margin-left: 100px;
-	margin-top: 100px;
-	font-family: "Montserrat", sans-serif;
-	line-height: 40px;
-	h1 {
-		font-size: 40px;
-		letter-spacing: 0.15em;
-	}
-	h2 {
-		.emphasize {
-			p {
-				background: var(--gradient-text-color);
-				background-clip: text;
-				font-style: normal;
-				font-family: "Montserrat", sans-serif;
-				letter-spacing: normal;
-				font-weight: bolder;
-				-webkit-text-fill-color: transparent;
-			}
-		}
-	}
+.intro-detail-section {
+    grid-area: intro-detail;
+    .intro-detail {
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        h4 {
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+        }
+        p {
+            margin-top: 2.5px;
+            font-size: 14px;
+            padding: 1.5px 2.5px;
+            border-radius: 5px;
+            font-weight: lighter;
+            font-family: "Fira Code", sans-serif;
+        }
+    }
 }
-.hide-readmore-content {
-	opacity: 1!important;
-	transition: opacity, 200ms ease-in-out;
+
+@media (max-width: 600px) {
+    .intro-container {
+        grid-template-areas: 
+        "intro-header intro-header"
+        "intro-image intro-image"
+        "intro-detail intro-detail"
+        ;
+        grid-template-columns: 1fr;
+    }
+    .intro-image-section {
+        padding-left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro-detail-section {
+        padding: 10px;
+    }
 }
-.hide-readmore {
-	height: 170px!important;
-	transition: min-height 0.2s ease-in-out;
-}
-.readmore-section {
-	margin-top: 15px;
-	max-width: 270px;
-	height: 45px;
-	padding: 10px 10px 0 10px;
-	line-height: normal;
-	text-align: left;
-	transition: min-height, 200ms ease-in-out;
-	position: relative;
-	.readmore-content {
-		opacity: 0;
-		transition: opacity, 200ms ease-in-out;
-	}
-	.readmore-button {
-		background: none;
-		background-color: transparent;
-		border: 1px solid white;
-		font-weight: lighter;
-		color: white;
-		font-weight: medium;
-		font-size:16px;
-		font-family: "Open Sans", sans-serif;
-		padding: 10px;
-		outline: none;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		transition: background-color, color, 0.2s ease-in-out;
-		cursor: pointer;
-		&:hover {
-			background-color: rgba(0, 0, 0, 0.75);
-			transition: background-color, color, 0.2s ease-in-out;
-			color: white;
-		}
-	}
-}
-@media (max-width: 700px) {
-	.intro-section {
-		width: 100%;
-		grid-template-columns: 1fr;
-	}
-	.intro-image-section {
-		text-align: center;
-		img {
-			max-width: 250px;
-			max-height: 250px;
-		}
-	}
-	.intro-details-section {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-left: 0;
-		margin-top: 350px;
-		text-align: center;
-		flex-direction: column;
-		h1 {
-			font-size: x-large;
-			text-align: center;
-		}
-	}
-	.readmore-section {
-		margin-top: 30px;
-		.readmore-content {
-			margin-bottom: 15px;
-		}
-		.readmore-button {
-			right: 50%;
-			transform: translate(50%, -50%);
-		}
-	}
+
+@media (max-width: 350px) {
+    .intro-detail-section {
+        .intro-detail {
+            flex-direction: column;
+        }
+    }
 }

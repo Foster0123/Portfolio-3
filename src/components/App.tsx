@@ -1,5 +1,6 @@
 import React from "react"
-import Info from "./Info"
+
+import Home from "./Home"
 import Intro from "./Intro"
 import Projects from "./Projects"
 import Footer from "./shared/Footer"
@@ -9,8 +10,8 @@ const App = () => {
 	return(
 		<main>
 			<Navbar />
+			<Home />
 			<Intro />
-			<Info />
 			<Projects />
 			<Footer />
 		</main>

@@ -1,30 +1,29 @@
-import React from 'react';
+import React from "react";
 
-import GlobalBg from './../assets/images/grid.svg';
+import AuthorLogo from "./../assets/images/user.png";
+
+import { info } from "../data/info/info";
 
 const Intro = () => {
-    function toggleReadMore() {
-        const rms: any = document.getElementById("readmore")
-        const rmc: any = document.getElementById("readmore-content")
-
-        rms.classList.toggle("hide-readmore");
-        rmc.classList.toggle("hide-readmore-content");
-    }
-    return (
-        <div className="intro-section"  id="intro" style={{backgroundImage: `url('${GlobalBg}')`}}>
-            <section className="intro-details-section" >
-                <h1 className="intro-title" >I Am Foster Z,</h1>
-                <h2><em className="emphasize" ><p>Enthusiastic & Passionate</p></em> Developer</h2>
-                <section className="readmore-section" id="readmore">
-                    <p className="readmore-content" id="readmore-content">
-                        I love building exotic full-stack applications which are performant, scalable, stable, responsive & highly user friendly
-                    </p>
-                    <button className="readmore-button"  onClick={toggleReadMore}>
-                        Read more
-                    </button>
-                </section>
-            </section>
-        </div>
-    )
-}
+	return (
+		<div className="intro-container" id="intro">
+			<section className="intro-header-section">
+				<h2 className="section-header">Personal</h2>
+			</section>
+			<section className="intro-image-section">
+				<img src={AuthorLogo} alt="Author Logo" />
+			</section>
+			<section className="intro-detail-section">
+				{info.map((data: any, index: number) => {
+					return (
+						<article className="intro-detail" key={index}>
+							<h4>{data.field}:</h4>
+							<p>{data.value}</p>
+						</article>
+					);
+				})}
+			</section>
+		</div>
+	);
+};
 export default Intro;

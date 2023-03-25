@@ -2,7 +2,7 @@
 @use './shared/footer/footer';
 @use './shared/navbar/navbar';
 
-@use './components/info/info';
+@use './components/home/home';
 @use './components/intro/intro';
 @use './components/works/works';
 @use './components/project/project';
@@ -20,7 +20,7 @@ body {
 	background-color: rgba(0,0,0,0.9);
 }
 html {
-	scroll-behavior: smooth;
+	scroll-behavior: smooth!important;
 	color: white;
 	scrollbar-width: thin;
 	&::-webkit-scrollbar {
