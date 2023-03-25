@@ -1,10 +1,12 @@
+@use './shared/global/global';
 @use './shared/footer/footer';
 @use './shared/navbar/navbar';
 
-@use './components/project/project';
-@use './components/projects/projects';
+@use './components/info/info';
 @use './components/intro/intro';
 @use './components/works/works';
+@use './components/project/project';
+@use './components/projects/projects';
 
 :root {
 	--default-bg-color:rgba(0,0,0,0.95);

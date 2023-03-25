@@ -8,7 +8,7 @@ const Projects = () => {
 
     return (
         <div className="project-container" id="projects">
-            <h2 className="project-header">Projects</h2>
+            <h2 className="section-header">Projects</h2>
             <div className="projects">
                 {
                     project.map((item: any, index: Number) => {
