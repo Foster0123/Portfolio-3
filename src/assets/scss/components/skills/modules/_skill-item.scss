@@ -1,11 +1,37 @@
+:root {
+    --skill-item-bg-color:rgba(0,0,0,0.7);
+}
 .tech-skills {
     display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
 }
 .skill-item {
-    background-color: rgb(255, 150, 125);
+    background-color: var(--skill-item-bg-color);
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
 }
 .skill-logo {
     max-width: 100px;
     max-height: 100px;
+}
+.skill-item p {
+    font-size: 24px;
+    margin-top: 10px;
+    letter-spacing: -2px;
+    font-family: "Source Code Pro";
+}
+
+@media (max-width: 600px) {
+    .tech-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
