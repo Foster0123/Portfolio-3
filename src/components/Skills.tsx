@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { frontend } from "../data/skills/skills";
+import { frontEnd, backEnd, language, uiLibs } from "../data/skills/skills";
 
 const Skills = () => {
 	return (
@@ -24,9 +23,9 @@ const Skills = () => {
 						<h2>All Skills</h2>
 					</TabPanel>
 					<TabPanel className="tech-skills">
-						{frontend.map((data: any) => {
+						{frontEnd.map((data: any) => {
 							return (
-								<article className="skill-item">
+								<article className="skill-item" style={{background: `linear-gradient(-300deg, transparent, ${data.accent} 100%)`}}>
 									<img className="skill-logo" src={data.imgSrc} alt={data.imgAlt} />
 									<p>{data.name}</p>
 								</article>
@@ -34,16 +33,37 @@ const Skills = () => {
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-						<h2>Back End Skills</h2>
+					{backEnd.map((data: any) => {
+							return (
+								<article className="skill-item" style={{background: `linear-gradient(-300deg, transparent, ${data.accent} 100%)`}}>
+									<img className="skill-logo" src={data.imgSrc} alt={data.imgAlt} />
+									<p>{data.name}</p>
+								</article>
+							);
+						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
 						<h2>Fullstack Skills</h2>
 					</TabPanel>
 					<TabPanel className="tech-skills">
-						<h2>Component Libraries</h2>
+					{uiLibs.map((data: any) => {
+							return (
+								<article className="skill-item" style={{background: `linear-gradient(-300deg, transparent, ${data.accent})`}}>
+									<img className="skill-logo" src={data.imgSrc} alt={data.imgAlt} />
+									<p>{data.name}</p>
+								</article>
+							);
+						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-						<h2>Programming Languages</h2>
+					{language.map((data: any) => {
+							return (
+								<article className="skill-item" style={{background: `linear-gradient(-300deg, transparent, ${data.accent})`}}>
+									<img className="skill-logo" src={data.imgSrc} alt={data.imgAlt} />
+									<p>{data.name}</p>
+								</article>
+							);
+						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
 						<h2>Databases</h2>

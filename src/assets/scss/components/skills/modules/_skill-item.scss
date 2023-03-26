@@ -1,5 +1,5 @@
 :root {
-    --skill-item-bg-color:rgba(0,0,0,0.7);
+    --skill-item-bg-color:transparent;
 }
 .tech-skills {
     display: grid;
@@ -8,7 +8,7 @@
     width: 100%;
     padding: 10px;
     grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
 }
 .skill-item {
     background-color: var(--skill-item-bg-color);
@@ -16,8 +16,8 @@
     padding: 10px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     border-radius: 10px;
+    flex-direction: column;
 }
 .skill-logo {
     max-width: 100px;
@@ -30,8 +30,32 @@
     font-family: "Source Code Pro";
 }
 
+@media (max-width: 1000px) {
+    .tech-skills {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .tech-skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 @media (max-width: 600px) {
     .tech-skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .tech-skills {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 350px) {
+    .tech-skills {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

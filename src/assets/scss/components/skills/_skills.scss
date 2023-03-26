@@ -4,14 +4,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
-    border-radius: 10px;
 }
 .skill {
     color: white;
     text-align: center;
     text-decoration: none;
     font-size: 22px;
-    padding: 10px;
+    padding: 5px;
     font-family: "Montserrat", sans-serif;
     background-color: rgba(80, 79, 79, 0.466);
     transition: color, background-color, 150ms ease-in;
