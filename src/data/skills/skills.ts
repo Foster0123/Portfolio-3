@@ -15,10 +15,16 @@ import NodeLogo from './../../assets/images/skills/node.png';
 import ExpressLogo from './../../assets/images/skills/express.png';
 import NestJSLogo from './../../assets/images/skills/nestjs.png';
 import AdonisJSLogo from './../../assets/images/skills/adonis.png';
+import DenoLogo from './../../assets/images/skills/deno.png';
+import FlaskLogo from './../../assets/images/skills/flask.png'
 
 // Full Stack Frameworks
 
 import RORLogo from './../../assets/images/skills/rubyonrails.png'
+import DjangoLogo from './../../assets/images/skills/django.png'
+import LaravelLogo from './../../assets/images/skills/laravel.png'
+import SpringBootLogo from './../../assets/images/skills/springboot.png'
+
 
 // State Management Libraries
 import ReduxLogo from './../../assets/images/skills/redux.png';
@@ -54,6 +60,16 @@ import MariaDBLogo from './../../assets/images/skills/mariadb.png';
 import RedisLogo from './../../assets/images/skills/redis.png';
 import MongoLogo from './../../assets/images/skills/mongodb.png';
 
+// Version Control System
+
+import GitLogo from './../../assets/images/skills/git.png'
+import GitHubLogo from './../../assets/images/skills/github.png'
+
+// Additionals
+
+import DSLogo from './../../assets/images/skills/datastructure.png'
+import AlgorithmLogo from './../../assets/images/skills/algorithm.png'
+
 export const frontEnd: Array<Object> = [
     { name: 'Angular', imgSrc: NgLogo, tag: 'frontend', imgAlt: 'Angular Logo', accent: 'darkred' },
     { name: 'React', imgSrc: ReactLogo, tag: 'frontend', imgAlt: 'React Logo', accent: 'steelblue' },
@@ -63,11 +79,32 @@ export const frontEnd: Array<Object> = [
 export const backEnd: Array<Object> = [
     { name: 'NestJS', imgSrc: NestJSLogo, tag: 'backend', imgAlt: 'NestJS Logo', accent: '#DF2F28' },
     { name: 'AdonisJS', imgSrc: AdonisJSLogo, tag: 'backend', imgAlt: 'AdonisJS Logo', accent: 'indigo' },
+    { name: 'ExpressJS', imgSrc: ExpressLogo, tag: 'backend', imgAlt: 'AdonisJS Logo', accent: 'gray' },
+    { name: 'NodeJS', imgSrc: NodeLogo, tag: 'backend', imgAlt: 'AdonisJS Logo', accent: 'green' },
+    { name: 'Deno', imgSrc: DenoLogo, tag: 'backend', imgAlt: 'AdonisJS Logo', accent: 'white' },
+    { name: 'Flask', imgSrc: FlaskLogo, tag: 'backend', imgAlt: 'AdonisJS Logo', accent: 'white' },
+    { name: 'Actix', imgSrc: ActixLogo, tag: 'backend', imgAlt: 'Actix Logo', accent: 'chocolate' },
 ]
 
 export const fullStack: Array<Object> = [
-    { name: 'NestJS', imgSrc: NestJSLogo, tag: 'backend', imgAlt: 'NestJS Logo', accent: '#DF2F28' },
-    { name: 'AdonisJS', imgSrc: AdonisJSLogo, tag: 'backend', imgAlt: 'AdonisJS Logo', accent: 'indigo' },
+    { name: 'Ruby On Rails', imgSrc: RORLogo, tag: 'fullstack', imgAlt: 'Ruby On Rails Logo', accent: 'red' },
+    { name: 'Laravel', imgSrc: LaravelLogo, tag: 'fullstack', imgAlt: 'Laravel Logo', accent: 'red' },
+    { name: 'Django', imgSrc: DjangoLogo, tag: 'fullstack', imgAlt: 'Django Logo', accent: 'darkgreen' },
+    { name: 'Spring Boot', imgSrc: SpringBootLogo, tag: 'fullstack', imgAlt: 'SpringBoot Logo', accent: 'lime' },
+]
+
+export const uiLibs: Array<Object> = [
+    { name: 'SpectreCSS', imgSrc: SpectreCSSLogo, tag: 'styleend', imgAlt: 'SpectreCSS Logo', accent: 'rebeccapurple' },
+    { name: 'Bootstrap 5', imgSrc: BSLogo, tag: 'styleend', imgAlt: 'Bootstrap 5 Logo', accent: 'indigo' },
+]
+
+
+export const db: Array<Object> = [
+    { name: 'MySQL', imgSrc: MyLogo, tag: 'database', imgAlt: 'MySQL Logo', accent: 'darkblue' },
+    { name: 'PostgreSQL', imgSrc: PGLogo, tag: 'database', imgAlt: 'PostgreSQL Logo', accent: 'blue' },
+    { name: 'MariaDB', imgSrc: MariaDBLogo, tag: 'database', imgAlt: 'MariaDB Logo', accent: 'cadetblue' },
+    { name: 'MongoDB', imgSrc: MongoLogo, tag: 'database', imgAlt: 'MongoDB Logo', accent: 'green' },
+    { name: 'Redis', imgSrc: RedisLogo, tag: 'database', imgAlt: 'Redis Logo', accent: 'darkred' },
 ]
 
 export const language: Array<Object> = [
@@ -87,16 +124,11 @@ export const language: Array<Object> = [
 ]
 
 export const vcs: Array<Object> = [
-    { name: 'Git', imgSrc: NestJSLogo, tag: 'backend', imgAlt: 'NestJS Logo', accent: '#DF2F28' },
-    { name: 'GitHub', imgSrc: AdonisJSLogo, tag: 'backend', imgAlt: 'AdonisJS Logo', accent: 'indigo' },
-]
-
-export const uiLibs: Array<Object> = [
-    { name: 'SpectreCSS', imgSrc: SpectreCSSLogo, tag: 'styleend', imgAlt: 'SpectreCSS Logo', accent: 'purple' },
-    { name: 'Bootstrap 5', imgSrc: BSLogo, tag: 'styleend', imgAlt: 'Bootstrap 5 Logo', accent: 'indigo' },
+    { name: 'Git', imgSrc: GitLogo, tag: 'backend', imgAlt: 'Git Logo', accent: 'black' },
+    { name: 'GitHub', imgSrc: GitHubLogo, tag: 'backend', imgAlt: 'GitHub Logo', accent: 'mediumslateblue' },
 ]
 
 export const extra: Array<Object> = [
-    { name: 'NestJS', imgSrc: NestJSLogo, tag: 'backend', imgAlt: 'NestJS Logo', accent: '#DF2F28' },
-    { name: 'AdonisJS', imgSrc: AdonisJSLogo, tag: 'backend', imgAlt: 'AdonisJS Logo', accent: 'indigo' },
+    { name: 'Data Structures', imgSrc: DSLogo, tag: 'extra', imgAlt: 'Data Structures Logo', accent: 'floralwhite' },
+    { name: 'Algorithms', imgSrc: AlgorithmLogo, tag: 'extra', imgAlt: 'Algorithms Logo', accent: 'floralwhite' },
 ]

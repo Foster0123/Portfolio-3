@@ -1,6 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { frontEnd, backEnd, language, uiLibs } from "../data/skills/skills";
+import { frontEnd, backEnd, language, uiLibs, vcs, extra, db, fullStack } from "../data/skills/skills";
 
 const Skills = () => {
 	return (
@@ -25,99 +25,156 @@ const Skills = () => {
 					<TabPanel className="tech-skills">
 						{frontEnd.map((data: any) => {
 							return (
-								<article className="skill-item" style={{background: `linear-gradient(-300deg, transparent, ${data.accent} 100%)`}}>
-									<img className="skill-logo" src={data.imgSrc} alt={data.imgAlt} />
+								<article
+									className="skill-item"
+									style={{
+										background: `linear-gradient(-300deg, transparent, ${data.accent} 100%)`,
+									}}
+								>
+									<img
+										className="skill-logo"
+										src={data.imgSrc}
+										alt={data.imgAlt}
+									/>
 									<p>{data.name}</p>
 								</article>
 							);
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-					{backEnd.map((data: any) => {
+						{backEnd.map((data: any) => {
 							return (
-								<article className="skill-item" style={{background: `linear-gradient(-300deg, transparent, ${data.accent} 100%)`}}>
-									<img className="skill-logo" src={data.imgSrc} alt={data.imgAlt} />
+								<article
+									className="skill-item"
+									style={{
+										background: `linear-gradient(-300deg, transparent, ${data.accent} 100%)`,
+									}}
+								>
+									<img
+										className="skill-logo"
+										src={data.imgSrc}
+										alt={data.imgAlt}
+									/>
 									<p>{data.name}</p>
 								</article>
 							);
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-						<h2>Fullstack Skills</h2>
-					</TabPanel>
-					<TabPanel className="tech-skills">
-					{uiLibs.map((data: any) => {
+					{fullStack.map((data: any) => {
 							return (
-								<article className="skill-item" style={{background: `linear-gradient(-300deg, transparent, ${data.accent})`}}>
-									<img className="skill-logo" src={data.imgSrc} alt={data.imgAlt} />
+								<article
+									className="skill-item"
+									style={{
+										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
+									}}
+								>
+									<img
+										className="skill-logo"
+										src={data.imgSrc}
+										alt={data.imgAlt}
+									/>
 									<p>{data.name}</p>
 								</article>
 							);
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-					{language.map((data: any) => {
+						{uiLibs.map((data: any) => {
 							return (
-								<article className="skill-item" style={{background: `linear-gradient(-300deg, transparent, ${data.accent})`}}>
-									<img className="skill-logo" src={data.imgSrc} alt={data.imgAlt} />
+								<article
+									className="skill-item"
+									style={{
+										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
+									}}
+								>
+									<img
+										className="skill-logo"
+										src={data.imgSrc}
+										alt={data.imgAlt}
+									/>
 									<p>{data.name}</p>
 								</article>
 							);
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-						<h2>Databases</h2>
+						{language.map((data: any) => {
+							return (
+								<article
+									className="skill-item"
+									style={{
+										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
+									}}
+								>
+									<img
+										className="skill-logo"
+										src={data.imgSrc}
+										alt={data.imgAlt}
+									/>
+									<p>{data.name}</p>
+								</article>
+							);
+						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-						<h2>Source Control</h2>
+					{db.map((data: any) => {
+							return (
+								<article
+									className="skill-item"
+									style={{
+										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
+									}}
+								>
+									<img
+										className="skill-logo"
+										src={data.imgSrc}
+										alt={data.imgAlt}
+									/>
+									<p>{data.name}</p>
+								</article>
+							);
+						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-						<h2>Additional Skills</h2>
+					{vcs.map((data: any) => {
+							return (
+								<article
+									className="skill-item"
+									style={{
+										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
+									}}
+								>
+									<img
+										className="skill-logo"
+										src={data.imgSrc}
+										alt={data.imgAlt}
+									/>
+									<p>{data.name}</p>
+								</article>
+							);
+						})}
+					</TabPanel>
+					<TabPanel className="tech-skills">
+					{extra.map((data: any) => {
+							return (
+								<article
+									className="skill-item"
+									style={{
+										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
+									}}
+								>
+									<img
+										className="skill-logo"
+										src={data.imgSrc}
+										alt={data.imgAlt}
+									/>
+									<p>{data.name}</p>
+								</article>
+							);
+						})}
 					</TabPanel>
 				</Tabs>
-				{/* <Link
-					activeClassName="active-skill-tab"
-					to="/fullstack-skills"
-					className="skill"
-				>
-					Fullstack
-				</Link>
-				<Link
-					activeClassName="active-skill-tab"
-					to="/language-skills"
-					className="skill"
-				>
-					Languages
-				</Link>
-				<Link
-					activeClassName="active-skill-tab"
-					to="/db-skills"
-					className="skill"
-				>
-					Databases
-				</Link>
-				<Link
-					activeClassName="active-skill-tab"
-					to="/vcs-skills"
-					className="skill"
-				>
-					Source Control
-				</Link>
-				<Link
-					activeClassName="active-skill-tab"
-					to="/ui-library"
-					className="skill"
-				>
-					UI Libraries
-				</Link>
-				<Link
-					activeClassName="active-skill-tab"
-					to="/extra-skills"
-					className="skill"
-					
-				>
-					Additionals
-				</Link> */}
 			</div>
 		</div>
 	);

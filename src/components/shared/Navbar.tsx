@@ -36,7 +36,7 @@ const Navbar = () => {
             <li className="nav-items"><a className="nav-link-2" href="#intro">Intro</a></li>
             <li className="nav-items"><a className="nav-link-3" href="#projects">Projects</a></li>
             <li className="nav-items"><a className="nav-link-4" href="#skills">Skills</a></li>
-            <li className="nav-items"><a className="nav-link-5" href="#about">About</a></li>
+            <li className="nav-items"><a className="nav-link-5" href="#upcoming">Upcoming</a></li>
         </ul>
         <section className="menu-button-section" id="navmenu">
             <button onClick={toggleNavbar}>

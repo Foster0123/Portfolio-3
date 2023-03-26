@@ -8,7 +8,8 @@
  "intro-header intro-header"
  "intro-image intro-detail"
  ;
- grid-template-columns: 350px 1fr;
+ padding: 10px;
+ grid-template-columns: 300px 1fr;
 }
 .intro-header-section {
     grid-area: intro-header;
@@ -24,17 +25,20 @@
 }
 .intro-detail-section {
     grid-area: intro-detail;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, rgba(39, 38, 38, 0.322), rgba(0,0,0,0.7));
     .intro-detail {
         padding: 5px 10px;
         display: flex;
         justify-content: space-between;
         h4 {
-            font-size: 16px;
+            font-size: 18px;
             font-family: "Open Sans", sans-serif;
         }
         p {
             margin-top: 2.5px;
-            font-size: 14px;
+            font-size: 16px;
             padding: 1.5px 2.5px;
             border-radius: 5px;
             font-weight: lighter;
