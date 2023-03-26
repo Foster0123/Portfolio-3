@@ -3,14 +3,16 @@
 	align-items: center;
 	justify-content: center;
 	display: grid;
-	grid-gap: 5px;
+	grid-gap: 10px;
 	width: 100%;
+	padding: 10px 0;
 	grid-template-columns: repeat(6, 35px);
+	background-color: rgba(37, 35, 35, 0.774);
+	border-radius: 0 0 15px 15px;
 	.project-tools {
-		width: 30px;
-		height: 30px;
+		width: 35px;
+		height: 35px;
 		object-fit: cover;
-		border-radius: 50%;
 		cursor: pointer;
 	}
 }

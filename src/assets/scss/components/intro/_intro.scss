@@ -18,14 +18,14 @@
     display: flex;
     padding-left: 10px;
     img {
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 270px;
+        max-height: 270px;
     }
 }
 .intro-detail-section {
     grid-area: intro-detail;
     .intro-detail {
-        padding: 5px 0;
+        padding: 5px 10px;
         display: flex;
         justify-content: space-between;
         h4 {
@@ -43,7 +43,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .intro-container {
         grid-template-areas: 
         "intro-header intro-header"
@@ -62,7 +62,7 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 700px) {
     .intro-detail-section {
         .intro-detail {
             flex-direction: column;

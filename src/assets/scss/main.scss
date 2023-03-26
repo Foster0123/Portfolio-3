@@ -4,9 +4,9 @@
 
 @use './components/home/home';
 @use './components/intro/intro';
-@use './components/works/works';
-@use './components/project/project';
 @use './components/projects/projects';
+@use './components/skills/skills';
+@use './components/upcoming/upcoming';
 
 :root {
 	--default-bg-color:rgba(0,0,0,0.95);

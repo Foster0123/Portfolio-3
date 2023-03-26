@@ -2,7 +2,7 @@ import React from 'react';
 
 import Project from './modules/Project';
 
-import { project } from './../data/project';
+import { project } from '../data/projects/project';
 
 const Projects = () => {
 
