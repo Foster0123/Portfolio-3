@@ -3,6 +3,11 @@
 .skill-tab-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10px;
+    overflow:hidden;
+    border-radius: 10px;
+}
+.skill-display-pane {
     padding: 10px;
 }
 .skill {

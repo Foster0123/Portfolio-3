@@ -1,12 +1,12 @@
 import React from 'react';
-
+import ExternalLogo from './../../assets/images/icons/expand-arrows.svg';
 const Project = (props: any) => {
     return (
         <div className="project-container" id="projects">
             <article className="project" style={{ background: `linear-gradient(60deg, rgba(0, 0, 0, 0.1) 5%, ${props.accent} 150%)` }}>
                 <div className="project-canvas" style={{ backgroundImage: `url(${props.bgImage})` }}>
                     <a className="new-image-window" href={props.bgImage} target="_blank">
-                        <i className="bi bi-box-arrow-up-right"></i>
+                        <img className="project-image-external" src={ExternalLogo} alt="External Link To Project Preview Image Icon" />
                     </a>
                     <img className="project-image"
                         src={props.logoImage}

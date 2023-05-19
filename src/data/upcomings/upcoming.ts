@@ -45,103 +45,9 @@ import FluidLogo from './../../assets/images/projects/fluid/fluid-logo.png'
 import FluidBg from './../../assets/images/projects/fluid/fluid-bg.jpeg'
 
 import OasisLogo from './../../assets/images/projects/oasis/Oasis.svg'
-// import OasisBg from './../../assets/images/projects/fluid/fluid-bg.jpeg';
 
-const project = [
-	{
-		name: "Authly",
-		details: "User Authentication Application",
-		bgImage: `${AuthlyBg}`,
-		logoImage: `${AuthlyLogo}`,
-		github: "https://github.com/Foster0123/Authly",
-		live: "#",
-		accent: "navy",
-		status: "Completed",
-		tech: [
-			`${PugLogo}`,
-			`${SassLogo}`,
-			`${NodeLogo}`,
-			`${ExpressLogo}`,
-			`${PGLogo}`,
-			`${JSLogo}`
-		],
-		skills: [
-			'Pug', 'Sass', "NodeJS", 
-			'ExpressJS', 'PostgreSQL', 
-			'JavaScript'
-		],
-		features: [
-			"Create account",
-			"Update account details",
-			"Delete account",
-			"Logout of account",
-			"Upload profile picture",
-			"Reset Forgotten Password",
-		],
-	},
-	{
-		name: "Blaze",
-		details: "Todo Application",
-		bgImage: `${BlazeBg}`,
-		logoImage: `${BlazeLogo}`,
-		github: "https://github.com/Foster0123/Blaze",
-		live: "#",
-		accent: "orange",
-		status: "Ongoing",
-		tech: [
-			`${ReactLogo}`,
-			`${ReduxLogo}`,
-			`${NodeLogo}`,
-			`${ExpressLogo}`,
-			`${RedisLogo}`,
-			`${MyLogo}`,
-			`${TSLogo}`,
-		],
-		skills: [
-			'React','Redux', "NodeJS", 
-			'ExpressJS', 'Redis', 'MySQL', 
-			'TypeScript'
-		],
-		features: [
-			"Create account",
-			"Update account details",
-			"Delete account",
-			"Logout of account",
-			"Upload profile picture",
-			"Reset Forgotten Password",
-		],
-	},
-	{
-		name: "Fluid",
-		details: "Chat Application",
-		bgImage: `${FluidBg}`,
-		logoImage: `${FluidLogo}`,
-		github: "https://github.com/Foster0123/Fluid",
-		live: "#",
-		accent: "lightblue",
-		status: "Ongoing",
-		tech: [
-			`${NgLogo}`,
-			`${ActixLogo}`,
-			`${SassLogo}`,
-			`${RedisLogo}`,
-			`${PGLogo}`,
-			`${TSLogo}`,
-		],
-		skills: [
-			'Angular', 'Actix Web', 'SCSS', 
-			'Redis','PostgreSQL', 'TypeScript'
-		],
-		features: [
-			"Create account",
-			"Update account details",
-			"Delete account",
-			"Logout of account",
-			"Upload profile picture",
-			"Reset Forgotten Password",
-		],
-	},
-	{
+export const upcoming : Array<Object> = [
+    {
 		name: "Oasis",
 		details: "E Commerce Application",
 		bgImage: `${FluidBg}`,
@@ -171,5 +77,4 @@ const project = [
 			"Dark Mode",
 		],
 	},
-];
-export { project };
+]

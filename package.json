@@ -17,25 +17,26 @@
 	},
 	"dependencies": {
 		"@mdx-js/react": "^2.3.0",
-		"gatsby": "^5.8.0",
-		"gatsby-plugin-image": "^3.8.0",
-		"gatsby-plugin-manifest": "^5.8.0",
-		"gatsby-plugin-mdx": "^5.8.0",
-		"gatsby-plugin-pnpm": "^1.2.10",
-		"gatsby-plugin-sass": "^6.8.0",
-		"gatsby-plugin-sharp": "^5.8.0",
-		"gatsby-plugin-sitemap": "^6.8.0",
-		"gatsby-source-filesystem": "^5.8.0",
-		"gatsby-transformer-sharp": "^5.8.0",
+		"gatsby": "^5.9.0",
+		"gatsby-plugin-image": "^3.9.0",
+		"gatsby-plugin-manifest": "^5.9.0",
+		"gatsby-plugin-mdx": "^5.9.0",
+		"gatsby-plugin-sass": "^6.9.0",
+		"gatsby-plugin-sharp": "^5.9.0",
+		"gatsby-plugin-sitemap": "^6.9.0",
+		"gatsby-source-filesystem": "^5.9.0",
+		"gatsby-transformer-sharp": "^5.9.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-tabs": "^6.0.0",
-		"sass": "^1.60.0"
+		"sass": "^1.62.0"
 	},
 	"devDependencies": {
-		"@types/node": "^18.15.7",
-		"@types/react": "^18.0.28",
+		"@babel/core": "^7.21.4",
+		"@types/node": "^18.15.12",
+		"@types/react": "^18.0.37",
 		"@types/react-dom": "^18.0.11",
-		"typescript": "^5.0.2"
+		"typescript": "^5.0.4",
+		"webpack": "^5.80.0"
 	}
 }

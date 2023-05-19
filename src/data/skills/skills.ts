@@ -23,6 +23,7 @@ import FlaskLogo from './../../assets/images/skills/flask.png'
 import RORLogo from './../../assets/images/skills/rubyonrails.png'
 import DjangoLogo from './../../assets/images/skills/django.png'
 import LaravelLogo from './../../assets/images/skills/laravel.png'
+import SymfonyLogo from './../../assets/images/skills/symfony.png'
 import SpringBootLogo from './../../assets/images/skills/springboot.png'
 
 
@@ -89,6 +90,7 @@ export const backEnd: Array<Object> = [
 export const fullStack: Array<Object> = [
     { name: 'Ruby On Rails', imgSrc: RORLogo, tag: 'fullstack', imgAlt: 'Ruby On Rails Logo', accent: 'red' },
     { name: 'Laravel', imgSrc: LaravelLogo, tag: 'fullstack', imgAlt: 'Laravel Logo', accent: 'red' },
+    { name: 'Symfony', imgSrc: SymfonyLogo, tag: 'fullstack', imgAlt: 'Symfony Logo', accent: 'silver' },
     { name: 'Django', imgSrc: DjangoLogo, tag: 'fullstack', imgAlt: 'Django Logo', accent: 'darkgreen' },
     { name: 'Spring Boot', imgSrc: SpringBootLogo, tag: 'fullstack', imgAlt: 'SpringBoot Logo', accent: 'lime' },
 ]
@@ -132,3 +134,15 @@ export const extra: Array<Object> = [
     { name: 'Data Structures', imgSrc: DSLogo, tag: 'extra', imgAlt: 'Data Structures Logo', accent: 'floralwhite' },
     { name: 'Algorithms', imgSrc: AlgorithmLogo, tag: 'extra', imgAlt: 'Algorithms Logo', accent: 'floralwhite' },
 ]
+
+
+export const all : Array<Object> = [];
+
+frontEnd.map((item) => all.push(item))
+backEnd.map((item) => all.push(item))
+fullStack.map((item) => all.push(item))
+uiLibs.map((item) => all.push(item))
+db.map((item) => all.push(item))
+language.map((item) => all.push(item))
+vcs.map((item) => all.push(item))
+extra.map((item) => all.push(item))

@@ -27,7 +27,7 @@
     grid-area: intro-detail;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(45deg, rgba(39, 38, 38, 0.322), rgba(0,0,0,0.7));
+    // background: linear-gradient(45deg, rgba(39, 38, 38, 0.322), rgba(0,0,0,0.7));
     .intro-detail {
         padding: 5px 10px;
         display: flex;
@@ -43,6 +43,7 @@
             border-radius: 5px;
             font-weight: lighter;
             font-family: "Fira Code", sans-serif;
+            color: silver;
         }
     }
 }

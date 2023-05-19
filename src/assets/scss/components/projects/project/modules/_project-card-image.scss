@@ -23,15 +23,16 @@
 		position: absolute;
 		right: 5px;
 		top: 5px;
-		padding: 5px;
+		padding: 4px 5px 0 4px;
 		border-radius: 50%;
 		transition: background-color, 200ms ease;
 		&:hover {
-			background-color: rgba(0,0,0,0.85);
+			background-color: rgba(65, 63, 63, 0.815);
 			transition: background-color, 200ms ease;
 		}
-		i {
-			color: white;
+		.project-image-external {
+			max-width: 16px;
+			max-height: 16px;
 		}
 	}
 }
