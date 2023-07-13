@@ -130,6 +130,11 @@ export const vcs: Array<Object> = [
     { name: 'GitHub', imgSrc: GitHubLogo, tag: 'backend', imgAlt: 'GitHub Logo', accent: 'mediumslateblue' },
 ]
 
+export const devops: Array<Object> = [
+    { name: 'Docker', imgSrc: SassLogo, tag:'devops', imgAlt: 'Docker Logo', accent: 'blue' },
+    { name: 'Kubernetes', imgSrc: StylusLogo, tag:'devops', imgAlt: 'Kubernetes Logo', accent: 'blue' }
+]
+
 export const extra: Array<Object> = [
     { name: 'Data Structures', imgSrc: DSLogo, tag: 'extra', imgAlt: 'Data Structures Logo', accent: 'floralwhite' },
     { name: 'Algorithms', imgSrc: AlgorithmLogo, tag: 'extra', imgAlt: 'Algorithms Logo', accent: 'floralwhite' },
@@ -145,4 +150,5 @@ uiLibs.map((item) => all.push(item))
 db.map((item) => all.push(item))
 language.map((item) => all.push(item))
 vcs.map((item) => all.push(item))
+devops.map((item) => all.push(item))
 extra.map((item) => all.push(item))

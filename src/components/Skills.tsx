@@ -1,6 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import {all, frontEnd, backEnd, language, uiLibs, vcs, extra, db, fullStack } from "../data/skills/skills";
+import {all, frontEnd, backEnd, language, uiLibs, vcs, extra, db, fullStack, devops } from "../data/skills/skills";
 
 const Skills = () => {
 	return (
@@ -17,6 +17,7 @@ const Skills = () => {
 						<Tab className="skill">Languages</Tab>
 						<Tab className="skill">Databases</Tab>
 						<Tab className="skill">Source Control</Tab>
+						<Tab className="skill">DevOps</Tab>
 						<Tab className="skill">Additionals</Tab>
 					</TabList>
 					<TabPanel className="tech-skills">
@@ -168,6 +169,27 @@ const Skills = () => {
 					</TabPanel>
 					<TabPanel className="tech-skills">
 					{vcs.map((data: any, index: any) => {
+							return (
+								<article
+									key={index}
+									className="skill-item"
+									style={{
+										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
+									}}
+								>
+									<img
+										className="skill-logo"
+										src={data.imgSrc}
+										alt={data.imgAlt}
+										loading="lazy"
+									/>
+									<p>{data.name}</p>
+								</article>
+							);
+						})}
+					</TabPanel>
+					<TabPanel className="tech-skills">
+					{devops.map((data: any, index: any) => {
 							return (
 								<article
 									key={index}

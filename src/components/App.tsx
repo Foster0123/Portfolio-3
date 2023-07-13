@@ -7,6 +7,7 @@ import Footer from "./shared/Footer"
 import Navbar from "./shared/Navbar"
 import Skills from "./Skills"
 import Upcoming from "./Upcoming"
+import Summary from "./Summary"
 
 const App = () => {
 	return(
@@ -14,6 +15,7 @@ const App = () => {
 			<Navbar />
 			<Home />
 			<Intro />
+			<Summary />
 			<Projects />
 			<Skills />
 			<Upcoming />

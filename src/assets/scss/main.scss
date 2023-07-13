@@ -7,6 +7,7 @@
 @use './components/projects/projects';
 @use './components/skills/skills';
 @use './components/upcoming/upcoming';
+@use './components/summary/summary';
 
 :root {
 	--default-bg-color:rgba(0,0,0,0.95);
