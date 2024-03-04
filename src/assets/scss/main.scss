@@ -1,31 +1,35 @@
-@use './shared/global/global';
-@use './shared/footer/footer';
-@use './shared/navbar/navbar';
-
-@use './components/home/home';
-@use './components/intro/intro';
-@use './components/projects/projects';
-@use './components/skills/skills';
-@use './components/upcoming/upcoming';
-@use './components/summary/summary';
-
 :root {
-	--default-bg-color:rgba(0,0,0,0.95);
+	--home-bg-color:  #141312;
+	
+	
 }
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
-body {
-	background-color: rgba(0,0,0,0.9);
-}
+
 html {
-	scroll-behavior: smooth!important;
-	color: white;
-	scrollbar-width: thin;
+	background: var(--home-bg-color);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	&::-webkit-scrollbar {
 		width: 5px;
 		display: none;
 	}
+	min-height: 100vh;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, a {
+	color: white;
 }

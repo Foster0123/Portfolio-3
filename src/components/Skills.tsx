@@ -1,12 +1,12 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import {all, frontEnd, backEnd, language, uiLibs, vcs, extra, db, fullStack, devops } from "../data/skills/skills";
+import { all, frontEnd, backEnd, language, uiLibs, vcs, extra, db, fullStack, devops } from "../data/skills/skills";
 
 const Skills = () => {
 	return (
 		<div className="skills-container" id="skills">
 			<h2 className="section-header">Skills</h2>
-			<div className="skill-section">
+			<select className="skill-section">
 				<Tabs className="skill-display-pane">
 					<TabList className="skill-tab-section">
 						<Tab className="skill">All</Tab>
@@ -21,14 +21,11 @@ const Skills = () => {
 						<Tab className="skill">Additionals</Tab>
 					</TabList>
 					<TabPanel className="tech-skills">
-					{all.map((data: any, index: any) => {
+						{all.map((data: any, index: any) => {
 							return (
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent} 100%)`,
-									}}
 								>
 									<img
 										className="skill-logo"
@@ -47,9 +44,6 @@ const Skills = () => {
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent} 100%)`,
-									}}
 								>
 									<img
 										className="skill-logo"
@@ -68,9 +62,6 @@ const Skills = () => {
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent} 100%)`,
-									}}
 								>
 									<img
 										className="skill-logo"
@@ -84,14 +75,11 @@ const Skills = () => {
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-					{fullStack.map((data: any, index: any) => {
+						{fullStack.map((data: any, index: any) => {
 							return (
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
-									}}
 								>
 									<img
 										className="skill-logo"
@@ -110,9 +98,7 @@ const Skills = () => {
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
-									}}
+									
 								>
 									<img
 										className="skill-logo"
@@ -131,9 +117,7 @@ const Skills = () => {
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
-									}}
+									
 								>
 									<img
 										className="skill-logo"
@@ -147,14 +131,12 @@ const Skills = () => {
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-					{db.map((data: any, index: any) => {
+						{db.map((data: any, index: any) => {
 							return (
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
-									}}
+									
 								>
 									<img
 										className="skill-logo"
@@ -168,14 +150,12 @@ const Skills = () => {
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-					{vcs.map((data: any, index: any) => {
+						{vcs.map((data: any, index: any) => {
 							return (
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
-									}}
+									
 								>
 									<img
 										className="skill-logo"
@@ -189,14 +169,12 @@ const Skills = () => {
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-					{devops.map((data: any, index: any) => {
+						{devops.map((data: any, index: any) => {
 							return (
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
-									}}
+									
 								>
 									<img
 										className="skill-logo"
@@ -210,14 +188,12 @@ const Skills = () => {
 						})}
 					</TabPanel>
 					<TabPanel className="tech-skills">
-					{extra.map((data: any, index: any) => {
+						{extra.map((data: any, index: any) => {
 							return (
 								<article
 									key={index}
 									className="skill-item"
-									style={{
-										background: `linear-gradient(-300deg, transparent, ${data.accent})`,
-									}}
+									
 								>
 									<img
 										className="skill-logo"
@@ -231,7 +207,7 @@ const Skills = () => {
 						})}
 					</TabPanel>
 				</Tabs>
-			</div>
+			</select>
 		</div>
 	);
 };

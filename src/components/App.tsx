@@ -1,25 +1,20 @@
 import React from "react"
 
-import Home from "./Home"
-import Intro from "./Intro"
-import Projects from "./Projects"
-import Footer from "./shared/Footer"
-import Navbar from "./shared/Navbar"
-import Skills from "./Skills"
-import Upcoming from "./Upcoming"
-import Summary from "./Summary"
+import Navbar from "./navbar/Navbar.component"
+import Sidebar from './sidebar/Sidebar.component';
 
 const App = () => {
 	return(
 		<main>
 			<Navbar />
-			<Home />
-			<Intro />
-			<Summary />
-			<Projects />
-			<Skills />
-			<Upcoming />
-			<Footer />
+			<Sidebar></Sidebar>
+			{/*<Home />*/}
+			{/*<Intro />*/}
+			{/*<Summary />*/}
+			{/*<Projects />*/}
+			{/*<Skills />*/}
+			{/*<Upcoming />*/}
+			{/*<Footer />*/}
 		</main>
 	)
 }
